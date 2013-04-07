@@ -13,14 +13,15 @@ What we wanted to do through our project was to give the common man a very intui
 * What's the relationship between say employment and education?
 * How is public health corelated to primary education leves?
 .. and get all the answers in the best way possible – through Data.
+
 There are 348 datasets on the data.gov.in website. By allowing citizens to mix, match and compare more than one dataset at a time, we have made possible 165 new and unique visualisations in just 24 hours.
 The website we built facilitates sharing and discussion on social media like Facebook/Twitter thus spreading the word about the 12th Five year plan and also educating Indians.
 And this is only the beginning!
-Intended audience
+
+### Intended audience
 Our intended audience is every inquisitive Indian. 
 * The data is directly taken from the data.gov.in website, and is 100% accurate. Thus, the visualizations generated from our website can be used by politicians, civil servants and journalists for use in their profession. 
 * On a broader stroke, the interface of the app is dead simple to use and can thus be used by anybody. The social sharing features (Facebook, Twitter) have been incorporated so that it can easily be discovered and discussed by every citizen of the country.
-
 
 ### Datasets used by you
 <What are the datasets you utilized>
