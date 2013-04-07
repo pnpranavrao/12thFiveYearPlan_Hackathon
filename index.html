@@ -86,16 +86,19 @@ h1 {
 <script src="http://d3js.org/queue.v1.min.js"></script>
 
 <div id="datasets">
-<center>Load any of the datasets to see our application in action.<br/>
-Power consumption: <input type="button" value="Dataset #1" onclick="getOptions('myList'); "/> <br/>
-Data input #2: <input type="button" value="Dataset #1" onclick="getOptions('2ndList'); "/>
+<center>Choose one of the two datasets to compare and analyze the data.<br/>
+Data input #1: <input type="button" name="power_data" value="Power consumption" onclick="getOptions('myList', name); "/> <input type="button"name="factories" value="Factories" onclick="getOptions('myList', name); "/> <input type="button" name="private_public" value="Private public" onclick="getOptions('myList', name); "/> <br/>
+Data input #2: <input type="button" name="power_data" value="Power consumption" onclick="getOptions('2ndList', name); "/> <input type="button"name="factories" value="Factories" onclick="getOptions('2ndList', name); "/> <input type="button" name="private_public" value="Private public" onclick="getOptions('2ndList', name); "/>
 </center>
 </div>
 <br/>
 
+<script type = "text/javascript" src = "factories.json"></script>
 <script type = "text/javascript" src = "private_public.json"></script>
+<script type = "text/javascript" src = "power_data.json"></script>
 
 <script>
+	var JSONObject;
 	
 	function colorState(name, color) {
 		var x = document.getElementById(name);
@@ -224,6 +227,18 @@ Data input #2: <input type="button" value="Dataset #1" onclick="getOptions('2ndL
 		color += Math.round(val*255).toString(16);
 		return color;
 	}
+
+	function resetBothStates() {
+		x = document.getElementById('myList');
+		y = document.getElementById('2ndList');
+		
+		for (var i=0; i<x.options.length;i) {
+			x.options.remove(i);
+		}
+		for (var i=0; i<y.options.length; i) {
+			y.options.remove(i);
+		}
+	}
 	
 	function toggleBothStates() {
 		if (click_flag) { //Single map display
@@ -279,7 +294,7 @@ Data input #2: <input type="button" value="Dataset #1" onclick="getOptions('2ndL
 
 <center>
 <select id="myList" onload="getOptions(id);" onchange="performSelection(id);"></select> <select id="2ndList" onload="getOptions(id);" onchange="performSelection(id);"></select><br/>
-<input type="button" value="Toggle" onclick="toggleBothStates();">
+<input type="button" value="Toggle" onclick="toggleBothStates();"> <input type="button" value="Reset" onclick="resetBothStates();">
 </center>
 <hr/>
 
@@ -7513,9 +7528,13 @@ function performSelection(id) {
 	//console.log(JSONObject.data.length);
 }
 
-function getOptions(id) {
+function getOptions(id, name) {
 	//console.log('load');
 	var select = document.getElementById(id);
+	
+	if (name == "power_data") JSONObject = JSONObject1;
+	else if (name =="factories") JSONObject = JSONObject2;
+	else if (name =="private_public") JSONObject = JSONObject3;
 	
 	for (var i=1; i<JSONObject.fields.length; i++) {
 		var text = JSONObject.fields[i];
