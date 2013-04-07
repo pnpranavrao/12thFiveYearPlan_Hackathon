@@ -25,8 +25,12 @@ Our intended audience is every inquisitive Indian.
 
 ### Datasets used by you
 
-All the datasets used were taken from 
-<mention sources, web links, etc>
+All the datasets used were taken from https://data.gov.in/hackathon/sectors. Particularly, we used the following datasets : 
+
+* [State wise/Sector wise Approved Outlay, Revised Outlay and Expenditure for Annual Plan 2011-12](http://data.gov.in/dataset/state-wisesector-wise-approved-outlay-revised-outlay-and-expenditure-annual-plan-2010-11-0)
+* [Factory Employment By States](http://data.gov.in/dataset/factory-employment-states)
+* [Estimated Employment In The Public And Private Sectors](http://data.gov.in/dataset/estimated-employment-public-and-private-sectors)
+* [Number Of Teachers In Educational Institutions (All India And State wise)] (http://data.gov.in/dataset/number-teachers-educational-institutions-all-india-and-state-wise)
 
 ### Limitations or Assumptions
 
@@ -45,10 +49,10 @@ India population : http://bl.ocks.org/karmadude/4526201
 
 There are two parts in the project : 
 
-#### Front end : 
+##### Front end : 
 The rich interativity is made possible due to a fantastic javascript library called d3.js. You can read more about it on d3js.org
 
-#### Back end:
+##### Back end:
 All the data available on the data.gov.in was further processed, cleaned and integrated with a Python library called pandas. (pandas.pydata.org) 
 
 ### Screen shots
