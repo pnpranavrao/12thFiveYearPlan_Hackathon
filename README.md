@@ -23,24 +23,33 @@ Our intended audience is every inquisitive Indian.
 
 
 ### Datasets used by you
-<What are the datasets you utilized>
+
+All the datasets used were taken from 
 <mention sources, web links, etc>
 
 ### Limitations or Assumptions
 
-<what are the limitations you faced while creating this submission>
-<what are the assumptions you have made while creating your submission>
-<what are the known limitations of your submission>
+* Currently the visualizations only mixes and matches among 10 different datasets. There are 348 such datasets available which when completed give a better picture.
+* A 3D bar graph would give a better representation of the data than the current colour chart. We are working on this.
+* Scientific Result : Correlation  is not equal to causation. Sometimes data which looks like they are related might not be so in reality. 
 
 ### Project inspiration
-<What inspired you to create this project>
+
+Honestly, we were inspired by the complexity of planning for an entire country's needs for the next half decade. At a time when we struggle to make plans for the coming weekend, we thought it was an interesting problem to figure out especially when there was a rich dataset provided.
 
 ### Similar projects
-<Links to similar projects you have come across while working on yours?>
+India population : http://bl.ocks.org/karmadude/4526201
 
 ### Software used
-<What software did you use to develop this project?>
+
+There are two parts in the project : 
+
+#### Front end : 
+The rich interativity is made possible due to a fantastic javascript library called d3.js. You can read more about it on d3js.org
+
+#### Back end:
+All the data available on the data.gov.in was further processed, cleaned and integrated with a Python library called pandas. (pandas.pydata.org) 
 
 ### Screen shots
-<Attach .jpeg screenshots of your submission. Ensure the entire flow of the submission is captured >
 
+//Todo
