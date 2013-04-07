@@ -1,5 +1,10 @@
 ## Plan for India!
 A state-of-the-art visualization engine for Govt. of India data. 
+***
+Visualization by Ajay Vishwanathan ( https://github.com/ajatix)
+
+Data-processing by Pranav Rao. 
+***
 
 You can see a working demo here : http://pnpranavrao.github.io/12thFiveYearPlan_Hackathon/
 
